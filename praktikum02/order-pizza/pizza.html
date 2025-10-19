@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jhony Pizzeria | Pemesanan-Pizza</title>
+  <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3595/3595458.png" type="image/x-icon">
+
+</head>
+<div id="container-form-order-pizza">
+    <div class="title-form-box">
+      <h3 class="title-form">Jhony Pizzeria | Pemesanan-Pizza</h3>
+    </div>
+    <div class="description-form">
+      <p class="description-text">PIZZA TERBAIK DATANG DARI PELAYANAN TERBAIK.</p>
+    </div>
+
+    <div class="form-box">
+      <p>Masukan Informasi Kamu</p>
+      <form action="output.php" method="post" id="pizza-order-form">
+        <div id="name-field">
+          <label for="namamu">Namamu:</label>
+          <input type="text" id="name" name="name" required min="4" placeholder="tidak boleh kurang dari 4 karakter">
+        </div>
+
+        <div id="address-field">
+          <label for="alamatmu">Alamatmu:</label>
+          <input type="text" id="address" name="address" required placeholder="Masukan alamat lengkap kamu">
+        </div>
+
+        <div id="phone-field">
+          <label for="phone">Nomor Telephone:</label>
+          <input type="tel" id="phone" name="phone" required placeholder="Masukan nomor telephone kamu">
+        </div>
+
+        <div id="email-field">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Masukan email kamu">
+        </div>
+
+        <div id="delivery-instructions-field">
+          <label for="instruksi-pemesanan">instruksi-pemesanan:</label>
+          <textarea id="instruksi-pemesanan" name="instruksi-pemesanan" minlength="10" maxlength="400" rows="4"
+            cols="40"
+            placeholder='Tidak boleh lebih dari 400 karakter"'></textarea>
+        </div>
+
+        <div id="pizza-specs">
+          <p id="pizza-specs-title">Desain Pizza Buatanmu Sendiri:</p>
+          <span>Spek Pizza</span>
+          <div id="pizza-crust-field">
+            <p>Crust (Pilih Salah Satu):</p>
+            <div id="classic-white-choice">
+              <label for="classic-white">
+                <input type="radio" name="pizza-crust" value="Classic White" id="classic-white" /> Classic White
+              </label>
+            </div>
+            <div id="multigrain-choice">
+              <label for="multigrain">
+                <input type="radio" name="pizza-crust" value="Multigrain" id="multigrain" /> Multigrain
+              </label>
+            </div>
+            <div id="cheese-stuffed-crust-choice">
+              <label for="cheese-stuffed-crust">
+                <input type="radio" name="pizza-crust" value="Cheese-stuffed crust" id="cheese-stuffed-crust" />
+                Cheese-stuffed crust
+              </label>
+            </div>
+            <div id="gluten-free-choice">
+              <label for="gluten-free">
+                <input type="radio" name="pizza-crust" value="Gluten-free" id="gluten-free" checked required />
+                Gluten-free
+              </label>
+            </div>
+          </div>
+
+          <div id="toppings-field">
+            <p>Toppings (Pilih Yang Kamu Inginkan):</p>
+            <div id="pepperoni-choice">
+              <label for="pepperoni">
+                <input type="checkbox" name="toppings[]" id="pepperoni" value="Pepperoni"> Pepperoni
+              </label>
+            </div>
+            <div id="red-sauce-choice">
+              <label for="red-sauce">
+                <input type="checkbox" name="toppings[]" id="red-sauce" value="Red Sauce" checked> Red Sauce
+              </label>
+            </div>
+            <div id="white-sauce-choice">
+              <label for="white-sauce">
+                <input type="checkbox" name="toppings[]" id="white-sauce" value="White Sauce"> White Sauce
+              </label>
+            </div>
+            <div id="mozzarella-cheese-choice">
+              <label for="mozzarella-cheese">
+                <input type="checkbox" name="toppings[]" id="mozzarella-cheese" value="Mozzarella Cheese"> Mozzarella
+                Cheese
+              </label>
+            </div>
+            <div id="mushrooms-choice">
+              <label for="mushrooms">
+                <input type="checkbox" name="toppings[]" id="mushrooms" value="Mushrooms"> Mushrooms
+              </label>
+            </div>
+            <div id="peppers-choice">
+              <label for="peppers">
+                <input type="checkbox" name="toppings[]" id="peppers" value="Peppers"> Peppers
+              </label>
+            </div>
+            <div id="anchovies-choice">
+              <label for="anchovies">
+                <input type="checkbox" name="toppings[]" id="anchovies" value="Anchovies"> Anchovies
+              </label>
+            </div>
+          </div>
+
+          <div id="quantity-field">
+            <p>Quantity</p>
+            <label for="quantity">
+              Berapa Banyak Pizza?: <input type="number" id="quantity" name="quantity" min="1" max="6" value="1" required>
+            </label>
+          </div>
+
+          <div class="button-group">
+            <button type="submit" name="submit">Pesan Sekarang!</button>
+            <button type="reset" name="reset">Reset</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

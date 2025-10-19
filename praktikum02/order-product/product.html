@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logitech Market</title>
+    <link rel="stylesheet" href="assets/css/sty.css">
+  </head>
+  <body style="background-color: rgba(77, 74, 74, 0.925)">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a target="_blank">Home</a></li>
+        <li><a href="#">Generate Link</a></li>
+        <li><a href="#">Transaction History</a></li>
+        <li><a href="#">Policy</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+
+    <!-- Form -->
+    <form action=".php" method="post" enctype="multipart/form-data">
+      <div style="display: flex; margin: 20px">
+        <div class="name-field">
+          <input class="input-image" type="file" name="product_image" />  
+        </div>
+        <div style="flex-direction: column; color: aliceblue">
+          <div class="section-field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />  
+          </div>
+
+          <div class="description-field">
+            <label for="description">Description</label>
+            <textarea name="description" id="description"></textarea>  
+          </div>
+
+          <div class="account-field-section">
+            <label for="account_number">Account Number</label>
+            <input type="text" name="account_number" id="account_number" />  
+          </div>
+
+          <div class="form-container-bank">
+            <label for="bank">Bank</label>
+            <select name="bank" id="bank">  
+              <option value="HSBC">HSBC</option>
+              <option value="BCA">BCA</option>
+              <option value="Dana">Dana</option>
+              <option value="Gopay">Gopay</option>
+            </select>
+          </div>
+
+          <div class="account-holder-field">
+            <label for="account_holder">Account Holder</label>
+            <input type="text" name="account_holder" id="account_holder" />  
+          </div>
+
+          <div style="display: flex">
+            <label for="transaction">Transaction</label>
+            <div style="display: flex; flex-direction: column; align-items: start">
+              <input type="number" name="transaction" id="transaction" min="1", max="3"/>  
+              <p>If the transaction is for 3 person, choose 3</p>
+              <div style="display: flex">
+                <input id="sendToMobilePhone" type="checkbox" name="sendToMobilePhone" />  
+                <label for="sendToMobilePhone">Send to Mobile Phone</label>
+              </div>
+              <div style="display: flex">
+                <input id="sendToEmail" name="sendToEmail" type="checkbox" />  
+                <label for="sendToEmail">Send to Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-section">
+            <label for="mobile_number">Send to Mobile Phone</label>
+            <input type="text" name="mobile_number" id="mobile_number" />  
+          </div>
+          <div class="send-field">
+            <label for="email">Send to Email</label>
+            <input type="email" name="email" id="email" />  
+          </div>
+          <div class="button-section">
+            <button type="submit">Pay Using Quick Link</button>  
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
