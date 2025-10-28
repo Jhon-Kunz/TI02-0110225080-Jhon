@@ -1,0 +1,87 @@
+body {
+    background-color: azure;
+}
+
+#header {
+    text-align: center;
+    background-color: yellowgreen;
+    color: white;
+}
+
+#soekarno {
+    font-weight: bold;
+    color: red;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    color: red;
+}
+
+.gambar {
+    margin-left: 33%;
+    margin-top: 2%;
+}
+
+.isi {
+    color: rgb(248, 80, 14);
+}
+
+.isi ::first-letter{
+    font-size: 50px;
+    color:crimson;
+}
+
+#profil {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#profil li {
+    color: red;
+}
+
+#beternak {
+    background-color: antiquewhite;
+}
+
+.koleksi {
+    display: flex;
+    gap: 1rem;
+}
+
+.promo {
+    text-align: center;
+    color: red;
+}
+ 
+.promo h3 {
+  color: blue;
+}
+
+.promo h4 {
+color: darkgreen;
+}
+
+.promo ol {
+    display: flex;
+    list-style: none;
+    margin-left: 40%;
+    gap: 1rem;
+}
+
+.promo ol li a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
