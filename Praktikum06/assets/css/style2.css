@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+header {
+    background-color: palevioletred;
+    height: 100px;
+    line-height: 100px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.5em;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    height: 500px;
+    line-height: 500px;
+}
+
+article {
+    flex: 3;
+    order: 1;
+}
+
+aside {
+    flex: 1;
+    order: 2;
+    background-color: green;
+}
+
+nav {
+    flex: 1;
+    order: 3;
+    background-color: blanchedalmond;
+}
+
+footer {
+    background-color: peru;
+    height: 130px;
+    line-height: 130px;
+}
